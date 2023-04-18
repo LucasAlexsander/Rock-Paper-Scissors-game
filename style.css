@@ -61,8 +61,8 @@ header {
     color: hsl(229, 64%, 46%);
 }
 
-.score h3 {
-    font-size: 9px;
+.score h1 {
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: -4px;
