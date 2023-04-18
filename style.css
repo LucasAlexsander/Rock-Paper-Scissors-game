@@ -90,7 +90,7 @@ header {
     display: none !important;
 }
 
-button.btnGame {
+div.btnGame {
     position: relative;
     width: calc(110px * 1.5);
     height: calc(110px * 1.5);
@@ -100,9 +100,10 @@ button.btnGame {
     justify-content: center;
     border: 10px solid rgba(0, 0, 0, 0);
     cursor: pointer;
+    background-color: #F8FEFF;
 }
 
-button.btnGame.win::after {
+div.btnGame.win::after {
     content: '';
     position: absolute;
     width: calc(100% + 20px);
@@ -131,29 +132,29 @@ button.btnGame.win::after {
     }
 }
 
-.game button.btnGame:first-child,
-.game button.btnGame:nth-child(2) {
+.game div.btnGame:first-child,
+.game div.btnGame:nth-child(2) {
     transform: translateY(calc(-110px/2));
 }
 
-.game button.btnGame:last-child {
+.game div.btnGame:last-child {
     margin: 0 auto;
     transform: translateY(calc(-110px/3));
 }
 
-button.btnGame.scissors {
+div.btnGame.scissors {
     border-color: hsl(40, 84%, 53%) !important;
     box-shadow: inset 0px 6px 0 0 rgba(0, 0, 0, .15),
         0 6px 0 0 hsl(39, 88%, 37%);
 }
 
-button.btnGame.paper {
+div.btnGame.paper {
     border: 10px solid hsl(230, 89%, 65%);
     box-shadow: inset 0px 6px 0 0 rgba(0, 0, 0, .15),
         0 6px 0 0 hsl(230, 58%, 39%);
 }
 
-button.btnGame.rock {
+div.btnGame.rock {
     border-color: hsl(349, 70%, 56%);
     box-shadow: inset 0px 6px 0 0 rgba(0, 0, 0, .15),
         0 6px 0 0 hsl(349, 56%, 37%);
@@ -283,17 +284,17 @@ button.none>img {
         height: 183px;
     }
 
-    button.btnGame {
+    div.btnGame {
         width: 125px;
         height: 125px;
     }
 
-    .game button.btnGame:first-child,
-    button.btnGame:nth-child(2) {
+    .game div.btnGame:first-child,
+    div.btnGame:nth-child(2) {
         transform: translateY(calc(-110px/2));
     }
 
-    .game button.btnGame:last-child {
+    .game div.btnGame:last-child {
         margin: 0 auto;
         transform: translateY(-40px);
     }

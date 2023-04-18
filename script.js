@@ -30,9 +30,9 @@ const pickedFunction = (picked) => {
         `
         <div class="picked">
             <div class="you-picked">
-                <button id="btnYour" class="btnGame ${picked}">
+                <div id="btnYour" class="btnGame ${picked}">
                 <img src="images/icon-${picked}.svg" alt="">
-                </button>
+                </div>
                 <h3>You Picked</h3>
             </div>
 
@@ -42,9 +42,9 @@ const pickedFunction = (picked) => {
             </div>
 
             <div class="pc-picked">
-                <button id="btnPc" class="btnGame none">
+                <div id="btnPc" class="btnGame none">
                 <img src="" alt="">
-                </button>
+                </div>
                 <h3>The Mouse Picked</h3>
             </div>
         </div>
